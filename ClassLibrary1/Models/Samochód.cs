@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1.Models
 {
-    internal class Samochód
+    public class Samochód
     {
-        public String marka;
-        public String model;
-        public int rokProdukcji;
+        public String marka { get;  }
+        public String model { get;  }
+        public int rokProdukcji { get; }
 
         private double prędkość;
         private int przebieg;

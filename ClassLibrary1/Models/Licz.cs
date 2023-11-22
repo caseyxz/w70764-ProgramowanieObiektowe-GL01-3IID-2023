@@ -4,26 +4,26 @@ namespace ClassLibrary1.Models
 {
     public class Licz
     {
-        private int sum = 0;
-        public int Sum
+        private int _value = 0;
+        public int Value
         {
-            get { return sum; }
-            set { sum = value; }
+            get { return _value; }
+            set { _value = value; }
         }
 
         public void Add(int num)
         {
-            sum += num;
+            _value += num;
         }
         public void Substract(int num)
         {
-            sum -= num;
+            _value -= num;
         }
 
         public Licz() { }
         public Licz(int sum)
         {
-            this.sum = sum;
+            this._value = sum;
         }
     }
 }
